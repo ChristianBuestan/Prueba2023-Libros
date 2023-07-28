@@ -1,0 +1,23 @@
+<p>
+    <mat-toolbar>
+      <span>{{title}}</span>
+    </mat-toolbar>
+    <mat-toolbar><span>Creacion de un Cliente</span></mat-toolbar>
+    <button mat-stroked-button (click)="golistarClientes()">Listado de Libros</button>
+  <!-- <button mat-stroked-button (click)="golistarFactura()">Ver Facturas</button> -->
+  </p>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Autor</mat-label>
+        <input matInput placeholder="cedula" id="txtcedula" name="txtcedula" [(ngModel)]="cliente.autor" />
+      </mat-form-field>
+      <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="nombre" id="txtNombre" name="txtNombre" [(ngModel)]="cliente.nombre"/>
+    </mat-form-field>
+    
+  </form>
+<button mat-stroked-button (click)="guardar()">Guardar Cliente</button> <br>
+
+<!--<button mat-stroked-button (click)="goListarClientes()">Listado de facturaos</button>-->
